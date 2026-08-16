@@ -42,7 +42,7 @@ print(df)
 print("\n--- STATISTICAL RESULTS ---")
 stats_summary = df[['Age', 'Net worth', 'Salary']].describe()
 print(stats_summary)
-
+stats_summary.to_csv('statistical_summary.csv')
 # Additional Specific Statistics
 print(f"\nMedian Age: {df['Age'].median()}")
 print(f"Median Salary: {df['Salary'].median()}")
