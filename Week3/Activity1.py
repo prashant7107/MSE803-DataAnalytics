@@ -30,8 +30,8 @@ df['Join Date'] = pd.to_datetime(df['Join Date'], errors='coerce')
 
 # Handle missing values for Country, Net worth, and Salary
 df['Country'] = df['Country'].fillna('Unknown')
-df['Net worth'] = df['Net worth'].fillna(df['Net worth'].median())
-df['Salary'] = df['Salary'].fillna(df['Salary'].median())
+# df['Net worth'] = df['Net worth'].fillna(df['Net worth'].median())
+# df['Salary'] = df['Salary'].fillna(df['Salary'].median())
 
 
 df.to_csv('cleaned_dataset.csv', index=False)
